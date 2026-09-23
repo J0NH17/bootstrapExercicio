@@ -18,7 +18,7 @@
 
   <body>
     <!-- NavBar -->
-    <nav class="navbar navbar-expand-lg bg-primary data-bs-theme=light">
+    <nav class="navbar navbar-expand-lg bg-primary data-bs-theme=dark">
       <div class="container-fluid">
         <button
           class="navbar-toggler"
@@ -32,58 +32,159 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-          <a class="navbar-brand" href="#"
-            ><i class="bi bi-laptop" style="font-size: 1.5rem"></i> Tech
-            Careers</a
+          <a class="navbar-brand text-white" href="#"
+            ><i class="bi bi-laptop pd-5" style="font-size: 1.5rem"></i>
+            <strong> Tech Careers </strong></a
           >
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
-                ><i class="bi bi-house-door"></i>Início</a
+              <a class="nav-link active text-white" aria-current="page" href="#"
+                ><i class="bi bi-house-door"></i> <b>Início</b></a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"
-                ><i class="bi bi-briefcase"></i> Vagas</a
+              <a class="nav-link disabled" href="#"
+                ><i class="bi bi-briefcase"></i> <b>Vagas</b></a
               >
             </li>
             <li class="nav-item">
               <a class="nav-link disabled" aria-disabled="true"
-                ><i class="bi bi-book"></i> Cursos</a
+                ><i class="bi bi-book"></i> <b>Cursos</b></a
               >
             </li>
           </ul>
           <form class="d-flex" role="search">
             <button class="btn btn-outline-light" type="submit">
-              <i class="bi bi-person-circle"></i> Área do candidato
+              <i class="bi bi-person-circle"></i> <b>Área do candidato</b>
             </button>
           </form>
         </div>
       </div>
     </nav>
-    <section class="container mt-5" >
-      <div class="row" style="background-color:#1D293D; color: white; padding: 20px; border-radius: 10px">
-        <div class="col-md-6" >
+    <!-- Parte inicial escura com imagem // Hero Section -->
+    <section class="p-5 text-light bg-dark">
+      <div class="row">
+        <div class="col-lg-6">
           <h1>Sua carreira em tecnologia começa aqui</h1>
-          <p>
+          <p class="text-secondary mt-4">
             Conectamos talentos tech às melhores oportunidades do mercado
           </p>
-          <a href="#" class="btn btn-primary"> Ver Vagas</a>
-          <button class="btn btn-outline-primary"> Cursos Gratuitos</button>
+          <a href="#" class="btn btn-primary mt-4 m-2"> Ver Vagas</a>
+          <button class="btn btn-outline-light mt-4 m-2">
+            Cursos Gratuitos
+          </button>
         </div>
-        <div class="col-md-6">
+        <div class="col-lg-6">
           <img
             src="https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="Imagem de tecnologia"
-            class="img-fluid"
-            width="300"
-            style="border-radius: 10px"
+            class="img-fluid rounded position-relative top-50 start-50 translate-middle"
+            width="370"
           />
         </div>
       </div>
+    </section>
+    <!-- Seção vagas   (Aqui tems os cards sobre algumas vagas )-->
+    <section container>
+      <!-- class no h2 para centralizar o textop e dar um espaço no top com mt= margin-top -->
+      <h2 class="text-center mt-3">
+        <!-- Icone se estrelas  -->
+        <i class="bi bi-stars">Vagas em destaque</i>
+      </h2>
+      <section class="mt-5 container">
+        <!-- colocando cada card em uma linha "row" -->
+        <div class="row">
+          <!-- dividindo card -->
+          <div class="col-lg">
+            <div class="card" style="width: 18rem">
+              <div class="card-body">
+                <button
+                  type="button"
+                  class="btn btn-success btn-sm"
+                  style="
+                    --bs-btn-padding-y: 0.1rem;
+                    --bs-btn-padding-x: 0.5rem;
+                    --bs-btn-font-size: 0.7rem;
+                  "
+                >
+                  Remoto
+                </button>
+                <h5 class="card-title mt-3">Desenvolvedor Front-end</h5>
+                <p class="card-text">HTML,CSS,Java Script e React.</p>
+                <a
+                  href="https://youtu.be/Zi_XLOBDo_Y?si=1rhGYCAcLa1MLhlA"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-primary"
+                  >Candidatar-se</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- dividindo card -->
+          <div class="col-lg">
+            <div class="card" style="width: 18rem">
+              <div class="card-body">
+                <button
+                  type="button"
+                  class="btn btn-warning btn-sm"
+                  style="
+                    --bs-btn-padding-y: 0.1rem;
+                    --bs-btn-padding-x: 0.5rem;
+                    --bs-btn-font-size: 0.7rem;
+                  "
+                >
+                  Híbrido
+                </button>
+                <h5 class="card-title mt-3">Analista de Dados</h5>
+                <p class="card-text">Python,SQL e Power BI.</p>
+                <a
+                  href="https://youtu.be/djV11Xbc914?si=zvMg-EJztk7ngoW9"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-primary"
+                  >Candidatar-se</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- dividindo card -->
+          <div class="col-lg">
+            <div class="card" style="width: 18rem">
+              <div class="card-body">
+                <button
+                  type="button"
+                  class="btn btn-info btn-sm"
+                  style="
+                    --bs-btn-padding-y: 0.1rem;
+                    --bs-btn-padding-x: 0.5rem;
+                    --bs-btn-font-size: 0.7rem;
+                  "
+                >
+                  Júnior
+                </button>
+                <h5 class="card-title mt-3">UX Designer</h5>
+                <p class="card-text">Figma,UI/UX e Prototiação.</p>
+                <a
+                  href="https://youtu.be/lcOxhH8N3Bo?si=9iiTqiSKzyiq1XjS"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-primary"
+                  >Candidatar-se</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Div separada para centralizar botão de "Todas as vagas" -->
+        <div class="text-center">
+          <button class="btn btn-outline-primary mt-4">
+            Ver todas as vagas <i class="bi bi-arrow-right"></i>
+          </button>
+        </div>
+      </section>
+    </section>
 
-    <!-- Hero Section -->
-    <!-- Seção vagas -->
     <!-- Seção Cursos -->
     <!-- Rodapé -->
     <!-- Modais -->
