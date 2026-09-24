@@ -95,7 +95,7 @@
         <!-- colocando cada card em uma linha "row" -->
         <div class="row">
           <!-- dividindo card -->
-          <div class="col-lg">
+          <div class="col-lg"><!-- Aqui começa o primeiro card -->
             <div class="card" style="width: 18rem">
               <div class="card-body">
                 <button
@@ -107,22 +107,27 @@
                     --bs-btn-font-size: 0.7rem;
                   "
                 >
-                  Remoto
+                  <b>Remoto</b>
                 </button>
                 <h5 class="card-title mt-3">Desenvolvedor Front-end</h5>
                 <p class="card-text">HTML,CSS,Java Script e React.</p>
+                <p class="text-secondary "><i class="bi bi-square-fill disabled"></i> Tech Solutions Inc.</p>
+              </div>
+              <!-- footer do cartão -->
+              <div class="card-footer bg-transparent text-center mt-5"> 
+                
                 <a
-                  href="https://youtu.be/Zi_XLOBDo_Y?si=1rhGYCAcLa1MLhlA"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="btn btn-primary"
-                  >Candidatar-se</a
-                >
+                href="https://youtu.be/Zi_XLOBDo_Y?si=1rhGYCAcLa1MLhlA"
+                target="_blank"
+                rel="noopener noreferrer"
+                class=" btn btn-primary"
+                >Candidatar-se</a>
+
               </div>
             </div>
-          </div>
+          </div><!-- Aqui termina o primeiro card -->
           <!-- dividindo card -->
-          <div class="col-lg">
+          <div class="col-lg"><!-- Aqui começa o segundo card -->
             <div class="card" style="width: 18rem">
               <div class="card-body">
                 <button
@@ -134,22 +139,25 @@
                     --bs-btn-font-size: 0.7rem;
                   "
                 >
-                  Híbrido
+                  <b>Híbrido</b>
                 </button>
                 <h5 class="card-title mt-3">Analista de Dados</h5>
-                <p class="card-text">Python,SQL e Power BI.</p>
-                <a
+                <p class="card-text">Python,SQL e Power BI.</p >
+                <p class="text-secondary "><i class="bi bi-square-fill disabled"></i> Data insigths</p>
+                </div>
+                <!-- footer do cartão -->
+                <div class="card-footer bg-transparent text-center mt-5">
+                  <a
                   href="https://youtu.be/djV11Xbc914?si=zvMg-EJztk7ngoW9"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="btn btn-primary"
-                  >Candidatar-se</a
-                >
-              </div>
+                  class="btn btn-primary "
+                  >Candidatar-se</a>
+                </div>
             </div>
-          </div>
+          </div><!-- Aqui termina o segundo card -->
           <!-- dividindo card -->
-          <div class="col-lg">
+          <div class="col-lg"><!-- Aqui começa o terceiro card -->
             <div class="card" style="width: 18rem">
               <div class="card-body">
                 <button
@@ -161,20 +169,24 @@
                     --bs-btn-font-size: 0.7rem;
                   "
                 >
-                  Júnior
+                  <b>Júnior</b>
                 </button>
                 <h5 class="card-title mt-3">UX Designer</h5>
                 <p class="card-text">Figma,UI/UX e Prototiação.</p>
-                <a
-                  href="https://youtu.be/lcOxhH8N3Bo?si=9iiTqiSKzyiq1XjS"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="btn btn-primary"
-                  >Candidatar-se</a
-                >
+                <p class="text-secondary "><i class="bi bi-square-fill disabled"></i> Digital Creations</p>
+              </div>
+              <!-- footer do cartão -->
+              <div class="card-footer bg-transparent text-center mt-5">
+              <a
+                href="https://youtu.be/lcOxhH8N3Bo?si=9iiTqiSKzyiq1XjS"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-primary"
+                >Candidatar-se</a
+              >
               </div>
             </div>
-          </div>
+          </div><!-- Aqui termina o terceiro card -->
         </div>
         <!-- Div separada para centralizar botão de "Todas as vagas" -->
         <div class="text-center">
@@ -184,8 +196,55 @@
         </div>
       </section>
     </section>
-
     <!-- Seção Cursos -->
+    <section class="container-lg">
+      <h2 class="text-center mt-5">
+        <i class="bi bi-book">Cursos em destaque</i>
+      </h2>
+      <div class="row mt-5">
+        <div class="col-lg">
+          <!-- Aqui começa o primeiro card -->
+          <div class="card" style="width: 18rem">
+            <div class="card  ">
+              <img src="note-Img.jpg" 
+              alt="Imagem de tecnologia"
+              class="img-fluid rounded card-img-top"
+              width="370"> <!-- Aqui está a imagem do card -->
+
+            </div>
+            <div class="card-body">
+              <h5 class="card-title mt-3">Programação Web</h5>
+              <p class="card-text">HTML,CSS,Java Script e React.</p>
+              <!-- Botão de gratuito -->
+              <button
+                type="button"
+                class="btn btn-success btn-sm mt-3 mb-3"
+                style="
+                  --bs-btn-padding-y: 0.1rem;
+                  --bs-btn-padding-x: 0.5rem;
+                  --bs-btn-font-size: 0.7rem;
+                
+                "
+              >
+                <b>Gratuito</b>
+              </button>
+            </div>
+            <div class="card-footer bg-transparent">
+              <a
+              href="https://youtu.be/Zi_XLOBDo_Y?si=1rhGYCAcLa1MLhlA"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-outline-primary"
+              >Começar Agora</a>
+            </div>
+          </div>
+          <!-- Aqui termina o primeiro card -->
+        </div> 
+        <div class="col-lg"></div>
+        <div class="col-lg"></div>
+        <div class="col-lg"></div>
+      </div>
+    </section>
     <!-- Rodapé -->
     <!-- Modais -->
 
